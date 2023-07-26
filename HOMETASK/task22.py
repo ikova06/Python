@@ -6,9 +6,9 @@
 
 
 from random import randint
-set1 = set(randint(1, 20) for i in range(int(input('Введите кол-во элементов множества 1: '))))
+set1 = set(randint(1, 51) for i in range(int(input('Введите кол-во элементов множества 1: '))))
 print(set1)
-set2 = set(randint(1, 20) for i in range(int(input('Введите кол-во элементов множества 2: '))))
+set2 = set(randint(1, 51) for i in range(int(input('Введите кол-во элементов множества 2: '))))
 print(set2)
 set3 = sorted(set1.intersection(set2))
 print(*set3)

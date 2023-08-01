@@ -7,36 +7,28 @@
 # Output: a a_1 a_2 b c a_3 a_4 d c_1 d_1 d_2
 
 s = 'a a a b c a a d c d d'.split()
-my_dict = {n: s.count(n) for n in s}
-for i in s:
-       if i in s:
-        print(f'{i}_{my_dict[i]}',  end=' ')
+print(s)
+my_dict = {}
+print(my_dict)
+for v in s:
+    if v not in my_dict:
+        print(v, end=' ') 
+        # my_dict[v] = 1
+    else:
+        print(f'{v}_{my_dict[v]}', end=' ')
+        # my_dict[v] += 1
+    my_dict[v] = my_dict.get(v, 0) +1 
 
 
-
-
-
-#  my_dict[i] = my_dict.get(i,0) + 1
-
-
-
-
-# {n: s.count(n) for n in s}
-# for i in s:
-#     if i in s:
-#         print(f'{i}_{my_dict[i]}')
+# stroka = 'a a b c'.split()
+# result = {}
+# for i in stroka:
+#     if i in result:
+#         print(f'{i}_{result[i]}', end=' ')
+#         result[i] += 1
 #     else:
-#         print(i, " ")
-#         my_dict[i] = my_dict.get(i,0) + 1
-
-    
-    # if item in s1:
-#     	print(f'{i}_{s1[i]}', end=' ')
-# else:
-#         print(item, end=' ')
-# s1[i] = s1.get(i, 0) + 1
-
-# print(my_dict)
+#         print(i, end=' ')
+#         result[i] = 1
 
 
 
@@ -49,22 +41,20 @@ for i in s:
 
 
 
-# s1 = input("a a a b c a a d c d d").split()
-# def count_duplicates(lst):
-#     counts = {}  # Создаем пустой словарь для подсчета повторений
-#     for item in lst:
-#         if item in counts:
-#             counts[item] += 1  # Увеличиваем значение для существующего элемента
-#         else:
-#             counts[item] = 1  # Добавляем новый элемент в словарь с начальным значением 1
 
-#     return counts
 
-# my_list = s1
-# duplicates = count_duplicates(my_list)
-# for item, count in duplicates.items():
-#     if item in s1:
-#     	print(f'{i}_{s1[i]}', end=' ')
-# else:
-#         print(item, end=' ')
-# s1[i] = s1.get(i, 0) + 1
+
+#         count = 0
+#         if v in my_dict:
+#             print(v) 
+#         if  my_dict[v] == my_dict[v]:
+#             print(f'{v}_{count+1 for my_dict[v] in (s.count(v))}', end=' ')
+
+
+
+# my_dict = {n: s.count(n) for n in s}
+# for i in s:
+#        if i in s:
+#         print(f'{i}_{my_dict[i]}',  end=' ')
+
+

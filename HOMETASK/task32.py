@@ -11,3 +11,27 @@ for i in range(len(list1)):
     if list1[i] >= min and list1[i] <= max:
         list2.append(i)
 print(list2)
+
+# или
+
+
+# def criterion(candidat, lowLimit, upLimit) :  # возвращает True когда candidat удовлетворяет условию
+# в данном случае не менее lowLimit  и не более upLimit
+#     if lowLimit <= candidat < upLimit :
+#         return True
+#     else :
+#         return False
+
+# ml = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+# lowB = int(input("задайте нижнюю границу:= "))
+# upB = int(input("задайте верхнюю границу:= "))
+# ind_res = []
+# for i in range(len(ml)) : # привычнее бежать по индексам 
+# #    if lowB <= i < upB :
+#     if criterion(ml[i], lowB, upB) :
+#         ind_res.append(i) # дополняем список индексом, для которого элемент с этим индексом удовлетворяет условию  
+# #        print(i, ml[i]) # отладочная печать пары индекс и значение, удовлетворяющее условию 
+# print("в списке:")
+# print(ml)
+# print("в интервале значений больше или равно ",lowB," но менее ", upB," лежат элементы с индексами")
+# print(ind_res)
